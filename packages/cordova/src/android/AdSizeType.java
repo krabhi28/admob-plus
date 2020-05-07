@@ -11,19 +11,19 @@ public enum AdSizeType {
           return AdSize.BANNER;
       }
       if (AdSizeType.LARGE_BANNER.equals(adSize)) {
-          return AdSize.LARGE_BANNER;
+          return AdSize.BANNER;
       }
       if (AdSizeType.MEDIUM_RECTANGLE.equals(adSize)) {
-          return AdSize.MEDIUM_RECTANGLE;
+          return AdSize.BANNER;
       }
       if (AdSizeType.FULL_BANNER.equals(adSize)) {
-          return AdSize.FULL_BANNER;
+          return AdSize.BANNER;
       }
       if (AdSizeType.LEADERBOARD.equals(adSize)) {
-          return AdSize.LEADERBOARD;
+          return AdSize.BANNER;
       }
       if (AdSizeType.SMART_BANNER.equals(adSize)) {
-          return AdSize.SMART_BANNER;
+          return AdSize.BANNER;
       }
       return null;
     }
