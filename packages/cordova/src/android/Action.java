@@ -33,7 +33,7 @@ public class Action {
     public AdSize getAdSize() {
         final String name = "size";
         if (!this.opts.has(name)) {
-            return AdSize.SMART_BANNER;
+            return AdSize.BANNER;
         }
         AdSize adSize = AdSizeType.getAdSize(this.opts.opt(name));
         if (adSize != null) {
@@ -41,7 +41,7 @@ public class Action {
         }
         JSONObject adSizeObj = this.opts.optJSONObject(name);
         if (adSizeObj == null) {
-            return AdSize.SMART_BANNER;
+            return AdSize.BANNER;
         }
         return new AdSize(adSizeObj.optInt("width"), adSizeObj.optInt("height"));
     }
