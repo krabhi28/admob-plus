@@ -11,7 +11,7 @@ export default class Banner extends AdBase {
     return execAsync(NativeActions.banner_show, [
       {
         position: 'bottom',
-        size: AdSizeType.SMART_BANNER,
+        size: AdSizeType.BANNER,
         ...opts,
         adUnitID,
         id: this.state.getAdId(adUnitID),
